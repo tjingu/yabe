@@ -17,7 +17,7 @@ public class Post extends Model {
     @ManyToOne
     public User author;
 
-    @OneToMany(mappedBy="post", cascade=CascadeType.ALL)
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
     public List<Comment> comments;
 
     public Post(User author, String title, String content) {
