@@ -11,10 +11,25 @@ User(jeff):
   password:       secret
   fullname:       Jeff
 
+Tag(play):
+  name:           Play
+
+Tag(architecture):
+  name:           Architecture
+
+Tag(test):
+  name:           Test
+
+Tag(mvc):
+  name:           MVC
+
 Post(firstBobPost):
   title:          About the model layer
   postedAt:       2009-06-14
   author:         bob
+  tags:
+    - architecture
+    - play
   content:        >
     The model has a central position in a Play! application. It is the domain-specific 
     representation of the information on which the application operates.
@@ -54,17 +69,6 @@ Comment(c3):
   postedAt:       2009-04-05
   post:           secondBobPost
 
-Tag(play):
-  name:           Play
-
-Tag(architecture):
-  name:           Architecture
-
-Tag(test):
-  name:           Test
-
-Tag(mvc):
-  name:           MVC
 
 Post(jeffPost):
   title:          The MVC application
@@ -75,5 +79,9 @@ Post(jeffPost):
     - architecture
     - mvc
   content:        >
-    A Play
-
+                  A Play! application follows the MVC architectural pattern as applied to the 
+                  architecture of the Web.
+      
+                  This pattern splits the application into separate layers: the Presentation 
+                  layer and the Model layer. The Presentation layer is further split into a 
+                  View and a Controller layer.
