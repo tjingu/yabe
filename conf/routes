@@ -5,7 +5,8 @@
 # Import Secure routes
 *       /                                       module:secure
 
-# Import CRUD routes
+# Administration
+GET     /admin/?                                Admin.index
 *       /admin                                  module:crud
 
 GET     /captcha                                Application.captcha
