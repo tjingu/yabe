@@ -7,3 +7,6 @@ require:
 
 # Import the secure module
     - secure
+
+# Import the cobertura module in application
+    - play -> cobertura {version}
